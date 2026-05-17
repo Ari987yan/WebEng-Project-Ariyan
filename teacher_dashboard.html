@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard - Student Attendance</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="dashboard-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <i class='bx bxs-graduation'></i> SAMS
+            </div>
+            <ul class="sidebar-nav">
+                <li><a href="#" class="active"><i class='bx bxs-dashboard'></i> Dashboard</a></li>
+                <li><a href="#"><i class='bx bxs-edit'></i> Mark Attendance</a></li>
+                <li><a href="#"><i class='bx bxs-user-badge'></i> My Classes</a></li>
+                <li><a href="#"><i class='bx bxs-report'></i> Class Reports</a></li>
+                <li style="margin-top: auto;"><a href="#" id="logoutBtn"><i class='bx bx-log-out'></i> Logout</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="topbar">
+                <div>
+                    <h2 style="font-weight: 600;">Teacher Portal</h2>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Welcome back, Prof. Smith</p>
+                </div>
+                <div class="user-info">
+                    <span class="avatar">T</span>
+                </div>
+            </header>
+
+            <div class="stats-grid">
+                <div class="glass-panel stat-card">
+                    <div class="stat-icon">
+                        <i class='bx bxs-book'></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Classes Today</h3>
+                        <div class="value">4</div>
+                    </div>
+                </div>
+                <div class="glass-panel stat-card">
+                    <div class="stat-icon">
+                        <i class='bx bxs-check-shield'></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Attendance Marked</h3>
+                        <div class="value">2/4</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-panel table-container">
+                <div class="table-header">
+                    <h3>Grade 10 - Mathematics (Pending)</h3>
+                    <button class="btn btn-primary">Submit Attendance</button>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student ID</th>
+                            <th>Name</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>STU001</td>
+                            <td>Alex Johnson</td>
+                            <td>
+                                <select class="form-control" style="width: auto; padding: 0.5rem; background: rgba(0,0,0,0.5);">
+                                    <option value="present">Present</option>
+                                    <option value="absent">Absent</option>
+                                    <option value="late">Late</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>STU002</td>
+                            <td>Maria Garcia</td>
+                            <td>
+                                <select class="form-control" style="width: auto; padding: 0.5rem; background: rgba(0,0,0,0.5);">
+                                    <option value="present">Present</option>
+                                    <option value="absent">Absent</option>
+                                    <option value="late">Late</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>STU003</td>
+                            <td>James Wilson</td>
+                            <td>
+                                <select class="form-control" style="width: auto; padding: 0.5rem; background: rgba(0,0,0,0.5);">
+                                    <option value="absent" selected>Absent</option>
+                                    <option value="present">Present</option>
+                                    <option value="late">Late</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

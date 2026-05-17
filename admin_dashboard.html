@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Student Attendance</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Boxicons for modern icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="dashboard-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <i class='bx bxs-graduation'></i> SAMS
+            </div>
+            <ul class="sidebar-nav">
+                <li><a href="#" class="active"><i class='bx bxs-dashboard'></i> Dashboard</a></li>
+                <li><a href="#"><i class='bx bxs-user-detail'></i> Manage Teachers</a></li>
+                <li><a href="#"><i class='bx bxs-group'></i> Manage Students</a></li>
+                <li><a href="#"><i class='bx bxs-report'></i> Reports</a></li>
+                <li><a href="#"><i class='bx bxs-cog'></i> Settings</a></li>
+                <li style="margin-top: auto;"><a href="#" id="logoutBtn"><i class='bx bx-log-out'></i> Logout</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="topbar">
+                <div>
+                    <h2 style="font-weight: 600;">Admin Overview</h2>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">Welcome back, Administrator</p>
+                </div>
+                <div class="user-info">
+                    <span class="avatar">A</span>
+                </div>
+            </header>
+
+            <div class="stats-grid">
+                <div class="glass-panel stat-card">
+                    <div class="stat-icon">
+                        <i class='bx bxs-user-detail'></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Total Teachers</h3>
+                        <div class="value">45</div>
+                    </div>
+                </div>
+                <div class="glass-panel stat-card">
+                    <div class="stat-icon">
+                        <i class='bx bxs-group'></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Total Students</h3>
+                        <div class="value">1,250</div>
+                    </div>
+                </div>
+                <div class="glass-panel stat-card">
+                    <div class="stat-icon">
+                        <i class='bx bxs-check-circle'></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Today's Attendance</h3>
+                        <div class="value">92%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-panel table-container">
+                <div class="table-header">
+                    <h3>Recent System Activity</h3>
+                    <button class="btn btn-glass">View All</button>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>User</th>
+                            <th>Role</th>
+                            <th>Action</th>
+                            <th>Time</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John Smith</td>
+                            <td>Teacher</td>
+                            <td>Marked Grade 10 Math</td>
+                            <td>09:30 AM</td>
+                            <td><span class="badge badge-success">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>Sarah Connor</td>
+                            <td>Teacher</td>
+                            <td>Updated Student Record</td>
+                            <td>10:15 AM</td>
+                            <td><span class="badge badge-success">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>Admin System</td>
+                            <td>System</td>
+                            <td>Daily Backup</td>
+                            <td>12:00 AM</td>
+                            <td><span class="badge badge-warning">Pending</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
